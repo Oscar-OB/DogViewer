@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button3"
+
+        android:layout_width="130dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableStart="@drawable/bone_icon"
+        android:drawableTint="#E91E63"
+        android:drawableTintMode="src_in"
+        android:outlineProvider="none"
+        android:text="@string/picture_1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="287dp"
+        android:layout_height="316dp"
+        android:src="@drawable/dog2"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableStart="@drawable/bone_icon"
+        android:drawableTint="#4CAF50"
+        android:text="  Picture 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableStart="@drawable/bone_icon"
+        android:drawableTint="#0347F4"
+        android:text="@string/picture_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="419dp"
+        android:layout_height="69dp"
+        android:background="@android:color/holo_orange_light"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="423dp"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:text="Dog Viewer"
+            android:textAlignment="center"
+            android:textColor="#F4F3F3"
+            android:textSize="48sp"
+            android:textStyle="bold|italic"
+            tools:text="Dog Viewer" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
